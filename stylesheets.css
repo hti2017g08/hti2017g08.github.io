@@ -1,0 +1,16 @@
+
+li, ul{
+	list-style-type: none;
+	padding:	0px;
+}
+
+#tabs{
+	display: none;
+	padding-left: 50px;
+}
+
+#cTemp{
+	margin: 10px auto 10px auto;
+	border: 2px solid blue;
+	height: 50px;
+}

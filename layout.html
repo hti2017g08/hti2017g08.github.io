@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+		<link rel="stylesheet" href="mdl/material.min.css">
+		<link rel="stylesheet" href="mdl/material.css">
+		<script src="mdl/material.min.js"></script>
+		<script src="mdl/material.js"></script>
+		<script src="java.js"></script>
+		<script src="api.js"></script>
+		<link rel="stylesheet" href="stylesheets.css">
+	
+		<title>layout</title>
+	</head>
+	<body onload='startTime(), getTemp()'>
+	<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Title</span>
+      <!-- Add spacer, to align navigation to the right -->
+	 <div class="mdl-layout-spacer"></div>
+       <div id="text">
+			<div id="date"></div>
+			<div id="time"></div>
+      
+		</div>
+
+
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+  		<ul>
+		<nav class="mdl-navigation">
+		<li > <a class="mdl-navigation__link" href="">Link</a></li>
+		  <li id="dropdown"><div class="dropdown mdl-navigation__link">Schedual</div>
+			<ul id="tabs">
+				<li><a class="mdl-navigation__link" href="">Monday</a></li>
+				<li><a class="mdl-navigation__link" href="">Tuesday</a></li>
+				<li><a class="mdl-navigation__link" href="">Wednesday</a></li>
+				<li><a class="mdl-navigation__link" href="">Thursday</a></li>
+				<li><a class="mdl-navigation__link" href="">Friday</a></li>
+				<li><a class="mdl-navigation__link" href="">Saterday</a></li>
+				<li><a class="mdl-navigation__link" href="">Sunday</a></li>
+			</ul>
+			</li>
+		
+		</nav>
+		</ul>
+  </div>
+
+	  
+	  <main class="mdl-layout__content">
+		<div class="page-content"><!-- Your content goes here -->
+			<div class="mdl-grid">
+			<div id="cTemp" class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone"></div>
+</div>
+		</div>
+	  </main>
+	  <script>
+			open();
+			currentDate();
+			
+	  </script>
+	</div>
+
+
+	</body>
+</html>
